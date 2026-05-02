@@ -1,0 +1,13 @@
+{
+  "name": "mobile-mechanic-platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -w @mobile-mechanic/shared build && npm run -w @mobile-mechanic/api build",
+    "test": "npm run -w @mobile-mechanic/shared test && npm run -w @mobile-mechanic/api test",
+    "test:stress": "npm run -w @mobile-mechanic/api test:stress"
+  }
+}
